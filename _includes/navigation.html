@@ -1,0 +1,13 @@
+<nav>
+    <img src="/assets/images/BBG-WebLogo-color.png" alt="BBG Logo" class="logo">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="hamburger">☰</label>
+    <div class="nav-links">
+        {% for item in site.data.navigation %}
+            <a href="{{ item.link }}" {% if page.url == item.link %} class="current"{% endif %}>
+                {{ item.name | upcase }}
+            </a>
+            {%- unless forloop.last -%} | {%- endunless -%}
+        {%- endfor -%}
+    </div>
+</nav>

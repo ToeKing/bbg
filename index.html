@@ -1,0 +1,13 @@
+---
+some_number: 42
+title: home
+---
+
+{% assign words = "Welcome to the " | append: page.title | append: " of the BBG" | split: ' ' %}
+{% capture titlecase %}
+    {% for word in words %}
+        {{ word | capitalize }}
+    {% endfor %}
+{% endcapture %}
+<h1>{{ titlecase | replace: "Bbg", "BBG" }}</h1>
+<p>This is the main landing page of the website. The value of some_number is {{ page.some_number }}.</p>
