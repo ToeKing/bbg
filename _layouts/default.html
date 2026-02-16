@@ -13,14 +13,9 @@
         {{ content }}
         </main>
         <script>
-            document.addEventListener('click', function(e) {
-                var toggle = document.getElementById('nav-toggle');
-                if (toggle.checked && !e.target.closest('nav')) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    toggle.checked = false;
-                }
-            }, true);
+            document.getElementById('nav-overlay').addEventListener('click', function() {
+                document.getElementById('nav-toggle').checked = false;
+            });
             window.addEventListener('pageshow', function() {
                 document.getElementById('nav-toggle').checked = false;
             });
