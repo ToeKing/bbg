@@ -34,3 +34,14 @@ layout: default
 {% if page.info_link %}
   <p><a href="{{ page.info_link }}" class="btn" target="_blank" rel="noopener noreferrer">More Info</a></p>
 {% endif %}
+
+{% assign event_date_str = page.date | date: "%Y-%m-%d" %}
+{% for post in site.posts %}
+  {% if post.event_date %}
+    {% assign post_event_str = post.event_date | date: "%Y-%m-%d" %}
+    {% if post_event_str == event_date_str %}
+      <p><a href="{{ post.url }}" class="btn">📰 Read the {{ post.title }}</a></p>
+      {% break %}
+    {% endif %}
+  {% endif %}
+{% endfor %}

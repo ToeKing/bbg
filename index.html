@@ -6,11 +6,22 @@ title: BBG
     {% for post in site.posts %}
     <article class="post-card">
         <a href="{{ post.url }}" class="post-card-link">
+            <div class="post-card-date">{{ post.date | date: "%b %d, %Y" }}</div>
             <div class="post-card-content">
                 <h2>{{ post.title }}</h2>
-                <p class="post-excerpt">{{ post.excerpt }}</p>
+                <p class="post-excerpt">
+                    {% assign paragraphs = post.content | split: '</p>' %}
+                    {% for para in paragraphs %}
+                        {% if para contains '<p>' %}
+                            {% assign cleaned = para | split: '<p>' | last | strip_html | strip %}
+                            {% if cleaned != '' %}
+                                {{ cleaned }}
+                                {% break %}
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </p>
             </div>
-            <div class="post-card-date">{{ post.date | date: "%b %d, %Y" }}</div>
         </a>
     </article>
     {% endfor %}

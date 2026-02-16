@@ -11,7 +11,7 @@ title: Events
   {% assign has_upcoming = false %}
   <div class="events-list">
     {% for event in all_events %}
-      {% if event.date %}
+      {% if event.date and event.hidden != true %}
         {% assign event_timestamp = event.date | date: "%s" | plus: 0 %}
         {% if event_timestamp >= today %}
           {% if has_upcoming == false %}
@@ -20,7 +20,22 @@ title: Events
           <div class="event-item">
             <div class="event-date">{{ event.date | date: "%b %d" }}</div>
             <div class="event-details">
-              <h3><a href="{{ event.url }}">{{ event.title }}</a></h3>
+              {% assign event_date_str = event.date | date: "%Y-%m-%d" %}
+              {% assign linked_post = nil %}
+              {% for post in site.posts %}
+                {% if post.event_date %}
+                  {% assign post_event_str = post.event_date | date: "%Y-%m-%d" %}
+                  {% if post_event_str == event_date_str %}
+                    {% assign linked_post = post %}
+                    {% break %}
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+              {% if linked_post %}
+                <h3><a href="{{ linked_post.url }}">{{ event.title }}</a></h3>
+              {% else %}
+                <h3><a href="{{ event.url }}">{{ event.title }}</a></h3>
+              {% endif %}
               {% if event.time or event.location %}
                 <p class="event-meta">
                   {% if event.time %}<strong>{{ event.time }}</strong>{% endif %}

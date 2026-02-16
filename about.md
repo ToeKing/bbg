@@ -25,3 +25,12 @@ The Battleground Brewers Guild (BBG) is Greensboro, North Carolina's premier hom
 </div>
 
 The monthly meetings cover topics such as: making and judging beer styles, ingredient use, brewing methods, yeast preparation, and troubleshooting beer flavors. Members are encouraged to bring beer to share with the other members and get feedback (if desired). Our club calendar will reflect other meetings and events.
+
+<div class="about-card about-card-full">
+  <div class="about-card-icon">💬</div>
+  <div class="about-card-content">
+    <h3>Group Me Chat</h3>
+    <p>Keep up with folks between meetings! We communicate one-off events, meetups, and brew days in Group Me. It's also a great way to connect directly with other members.<br>
+    <a href="https://battlegroundbrewers.us10.list-manage.com/track/click?u=e3481d3ec94002985c7d8082a&id=961dcc679c&e=3bc9a4ef87" class="btn btn-small" target="_blank" rel="noopener noreferrer">Join Group Me</a></p>
+  </div>
+</div>
