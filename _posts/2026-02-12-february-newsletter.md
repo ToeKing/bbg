@@ -11,15 +11,15 @@ Our February meeting will be at Forgotten Roads brewing in Greensboro on Februar
 
 ## Dues
 
-For 2026 our dues will be $35. We will be collecting dues at all upcoming meetings and via Pay Pal. You can pay here.
+For 2026 our dues will be $35. We will be collecting dues at all upcoming meetings and via Pay Pal. You can pay <a href="https://battlegroundbrewers.us10.list-manage.com/track/click?u=e3481d3ec94002985c7d8082a&id=7d8cd16b64&e=3bc9a4ef87">here</a>.
 
 ## 2026 Mini-Club Comps
 
-For 2026 we have 4 mini-club comps planned. We hope you can participate in all of them!
-March - Green Beer, no rules, just green
-June - Rollin' them bones for an IPA
-September - Only German Beer with the Pretzel cup on the line
-November - More bones, but for spiced beer
+For 2026 we have 4 mini-club comps planned. We hope you can participate in all of them!  
+**March** - Green Beer, no rules, just green  
+**June** - Rollin' them bones for an IPA  
+**September** - Only German Beer with the Pretzel cup on the line  
+**November** - More bones, but for spiced beer
 
 ## 2026 Upcoming BBG Events
 
@@ -27,7 +27,7 @@ April
 4/18 NC Ale By Rail - Save the date! This time we head east. Details to follow.
 
 June
-6/19-20 Homebrew Con - Save the date! We are heading to Asheville for the 2026 Homebrew Con. Details to follow.
+6/19-20 Homebrew Con - Save the date! We are heading to Asheville for the 2026 <a href="https://battlegroundbrewers.us10.list-manage.com/track/click?u=e3481d3ec94002985c7d8082a&id=5d8adde2df&e=3bc9a4ef87">Homebrew Con.</a> Details to follow.
 
 October
 Date Unknown - Heading to the NC Homebrew Invitational. Details to follow.
@@ -39,11 +39,11 @@ Regular Meetings every 3rd Monday of the Month (except for December). The board 
 
 ## Competition Schedule
 
-Competition season is officially open! The Virginia Beer Blitz is open to registration until March 7, with the competition on March 21. Sign up here.  National Homebrew Competition is also open to registration here through February 25th. The full Southeast Schedule can be found here.
+Competition season is officially open! The Virginia Beer Blitz is open to registration until March 7, with the competition on March 21. Sign up <a href="https://battlegroundbrewers.us10.list-manage.com/track/click?u=e3481d3ec94002985c7d8082a&id=8f86e0189c&e=3bc9a4ef87">here</a>.  National Homebrew Competition is also open to registration <a href="https://battlegroundbrewers.us10.list-manage.com/track/click?u=e3481d3ec94002985c7d8082a&id=433aeb80ef&e=3bc9a4ef87">here</a> through February 25th. The full Southeast Schedule can be found <a href="https://battlegroundbrewers.us10.list-manage.com/track/click?u=e3481d3ec94002985c7d8082a&id=c9c908dbdb&e=3bc9a4ef87">here</a>.
 
 ## Group Me Chat
 
-If you are interested in keeping up with folks between meetings, join our Group Me Chat here. We will communicate one-off events, meetups, and brew days in Group Me. This is also a great way to communicate directly with other members!
+If you are interested in keeping up with folks between meetings, join our Group Me Chat <a href="https://battlegroundbrewers.us10.list-manage.com/track/click?u=e3481d3ec94002985c7d8082a&id=961dcc679c&e=3bc9a4ef87">here</a>. We will communicate one-off events, meetups, and brew days in Group Me. This is also a great way to communicate directly with other members!
 
 We look forward to seeing everyone next week!
 
