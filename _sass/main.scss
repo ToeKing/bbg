@@ -186,6 +186,12 @@ h1 {
     .nav-links a:hover {
         background-color: #f0f4f6;
     }
+    .nav-links a.current {
+        border-top: none;
+        border-left: 4px solid #44697b;
+        background-color: #f0f4f6;
+        padding-left: 16px;
+    }
     .nav-toggle:checked ~ .nav-links {
         display: flex;
     }
