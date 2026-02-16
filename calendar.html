@@ -5,14 +5,14 @@ title: Events
 <h1>Upcoming Events</h1>
 
 {% assign all_events = site.pages | where_exp: "page", "page.path contains 'events/'" | sort: "date" %}
-{% capture today %}{{ "now" | date: "%s" }}{% endcapture %}
+{% assign today = "now" | date: "%Y-%m-%d" | date: "%s" | plus: 0 %}
 
 {% if all_events.size > 0 %}
   {% assign has_upcoming = false %}
   <div class="events-list">
     {% for event in all_events %}
       {% if event.date %}
-        {% capture event_timestamp %}{{ event.date | date: "%s" }}{% endcapture %}
+        {% assign event_timestamp = event.date | date: "%s" | plus: 0 %}
         {% if event_timestamp >= today %}
           {% if has_upcoming == false %}
             {% assign has_upcoming = true %}

@@ -1,5 +1,4 @@
 ---
-layout: event
 title: Poker Night
 date: 2026-02-06
 time: "7:00 PM"

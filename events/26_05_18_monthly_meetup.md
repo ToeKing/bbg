@@ -1,5 +1,4 @@
 ---
-layout: event
 title: Monthly Meetup
 date: 2026-05-18
 time: "7:00 PM"

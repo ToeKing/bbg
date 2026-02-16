@@ -6,4 +6,4 @@ location: Forgotten Road Ales GSO
 location_link: https://maps.app.goo.gl/2yfQjm4eaTxRaNVQ6
 ---
 
-Join us for our monthly meetup! We'll be discussing beer styles and sharing brews.
+Join us for our monthly meetup! Bring your best saison and we'll judge as as a group and send the winning beer to competition!

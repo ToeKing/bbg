@@ -1,5 +1,4 @@
 ---
-layout: event
 title: NC Ale By Rail
 date: 2026-04-18
 time:
