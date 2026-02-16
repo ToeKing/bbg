@@ -1,13 +1,17 @@
 ---
-some_number: 42
-title: home
+title: BBG
 ---
 
-{% assign words = "Welcome to the " | append: page.title | append: " of the BBG" | split: ' ' %}
-{% capture titlecase %}
-    {% for word in words %}
-        {{ word | capitalize }}
+<div class="posts-grid">
+    {% for post in site.posts %}
+    <article class="post-card">
+        <a href="{{ post.url }}" class="post-card-link">
+            <div class="post-card-content">
+                <h2>{{ post.title }}</h2>
+                <p class="post-excerpt">{{ post.excerpt }}</p>
+            </div>
+            <div class="post-card-date">{{ post.date | date: "%b %d, %Y" }}</div>
+        </a>
+    </article>
     {% endfor %}
-{% endcapture %}
-<h1>{{ titlecase | replace: "Bbg", "BBG" }}</h1>
-<p>This is the main landing page of the website. The value of some_number is {{ page.some_number }}.</p>
+</div>

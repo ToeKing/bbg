@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<h1 class="post-title">{{ page.title }}</h1>
+{% if page.date or page.time %}
+  <p class="post-meta">
+    {% if page.date %}
+      {{ page.date | date: "%B %-d, %Y" }}
+    {% endif %}
+    {% if page.time %}
+      at {{ page.time }}
+    {% endif %}
+  </p>
+{% endif %}
+
+{% if page.location %}
+  <p class="event-location"><strong>Location:</strong> 
+    {% if page.location_link %}
+      <a href="{{ page.location_link }}" class="inline-link" target="_blank" rel="noopener noreferrer">{{ page.location }}</a>
+    {% else %}
+      {{ page.location }}
+    {% endif %}
+  </p>
+{% endif %}
+
+{% if page.image %}
+  <img src="{{ page.image }}" alt="{{ page.title }}" class="event-image">
+{% endif %}
+
+<div class="event-content">
+  {{ content }}
+</div>
+
+{% if page.info_link %}
+  <p><a href="{{ page.info_link }}" class="btn" target="_blank" rel="noopener noreferrer">More Info</a></p>
+{% endif %}

@@ -1,0 +1,43 @@
+---
+title: Events
+---
+
+<h1>Upcoming Events</h1>
+
+{% assign all_events = site.pages | where_exp: "page", "page.path contains 'events/'" | sort: "date" %}
+{% capture today %}{{ "now" | date: "%s" }}{% endcapture %}
+
+{% if all_events.size > 0 %}
+  {% assign has_upcoming = false %}
+  <div class="events-list">
+    {% for event in all_events %}
+      {% if event.date %}
+        {% capture event_timestamp %}{{ event.date | date: "%s" }}{% endcapture %}
+        {% if event_timestamp >= today %}
+          {% if has_upcoming == false %}
+            {% assign has_upcoming = true %}
+          {% endif %}
+          <div class="event-item">
+            <div class="event-date">{{ event.date | date: "%b %d" }}</div>
+            <div class="event-details">
+              <h3><a href="{{ event.url }}">{{ event.title }}</a></h3>
+              {% if event.time or event.location %}
+                <p class="event-meta">
+                  {% if event.time %}<strong>{{ event.time }}</strong>{% endif %}
+                  {% if event.location %}
+                    <br>{% if event.location_link %}<a href="{{ event.location_link }}" class="inline-link" target="_blank" rel="noopener noreferrer">{{ event.location }}</a>{% else %}{{ event.location }}{% endif %}
+                  {% endif %}
+                </p>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% if has_upcoming == false %}
+    <p>No upcoming events at this time. Check back soon!</p>
+  {% endif %}
+{% else %}
+  <p>No upcoming events at this time. Check back soon!</p>
+{% endif %}
