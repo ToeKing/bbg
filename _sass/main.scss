@@ -118,6 +118,23 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    body {
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    main {
+        padding: 20px 16px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
     .hamburger {
         display: block;
     }
