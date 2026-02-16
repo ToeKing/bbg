@@ -40,7 +40,7 @@ layout: default
   {% if post.event_date %}
     {% assign post_event_str = post.event_date | date: "%Y-%m-%d" %}
     {% if post_event_str == event_date_str %}
-      <p><a href="{{ post.url }}" class="btn">📰 Read the {{ post.title }}</a></p>
+      <p><a href="{{ post.url | prepend: site.baseurl }}" class="btn">📰 Read the {{ post.title }}</a></p>
       {% break %}
     {% endif %}
   {% endif %}

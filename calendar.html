@@ -32,9 +32,9 @@ title: Events
                 {% endif %}
               {% endfor %}
               {% if linked_post %}
-                <h3><a href="{{ linked_post.url }}">{{ event.title }}</a></h3>
+                <h3><a href="{{ linked_post.url | prepend: site.baseurl }}">{{ event.title }}</a></h3>
               {% else %}
-                <h3><a href="{{ event.url }}">{{ event.title }}</a></h3>
+                <h3><a href="{{ event.url | prepend: site.baseurl }}">{{ event.title }}</a></h3>
               {% endif %}
               {% if event.time or event.location %}
                 <p class="event-meta">
