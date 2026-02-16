@@ -7,7 +7,7 @@
             <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %} class="current"{% endif %}>
                 {{ item.name | upcase }}
             </a>
-            {%- unless forloop.last -%} | {%- endunless -%}
+            {%- unless forloop.last -%}<span class="nav-separator"> | </span>{%- endunless -%}
         {%- endfor -%}
         <a href="https://www.facebook.com/groups/984018835050442/" class="social-link facebook" target="_blank" rel="noopener noreferrer" title="Visit our Facebook page">
             <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">

@@ -12,5 +12,15 @@
         <main>
         {{ content }}
         </main>
+        <script>
+            document.addEventListener('click', function(e) {
+                var toggle = document.getElementById('nav-toggle');
+                if (toggle.checked && !e.target.closest('nav')) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle.checked = false;
+                }
+            }, true);
+        </script>
     </body>
 </html>
