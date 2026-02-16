@@ -21,6 +21,9 @@
                     toggle.checked = false;
                 }
             }, true);
+            window.addEventListener('pageshow', function() {
+                document.getElementById('nav-toggle').checked = false;
+            });
         </script>
     </body>
 </html>
